@@ -5,22 +5,17 @@ import get from 'lodash/get'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 import LandingPage from '../components/landing-page'
-class RootIndex extends React.Component {
-  render() {
-    const content = get(this, 'props.data.allContentfulIndex.edges[0].node.content')
 
-    return (
-      console.log(content),
-      <Layout location={this.props.location}>
-       
-        <LandingPage content={content} />
+const HomePage = (props) => {
+  const data = props.data.allContentfulIndex.edges[0].node.content
+  return(
+    <Layout location={props.location}>
+        <LandingPage content={data} />
       </Layout>
-     
-    )
-  }
+  )
 }
 
-export default RootIndex
+export default HomePage
 
 export const pageQuery = graphql`
 query MyQuery {

@@ -3,19 +3,16 @@ import { Link } from 'gatsby'
 import Container from './container'
 import Tags from './tags'
 
-const LandingPage = ({content}) => {
-    if(!content) return null
-    if(!Array.isArray(content)) return null
-
+const LandingPage = ({ content }) => {
+    console.log(content)
     return (
-        console.log(content),
         <Container>
             <div className="main-index" key={content}>
                 {content.map((node, index) => {
-                    return(
-                        console.log(node),
+                    return (
                         <div className="content" key={index}>
-                          <h1 key={index}>{node.title}</h1>
+                            <h1>{node.title}</h1>
+                            <h1>{node.headline}</h1>
                         </div>
                     )
                 })}

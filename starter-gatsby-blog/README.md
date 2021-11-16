@@ -62,3 +62,31 @@ See the [official Contentful getting started guide](https://www.contentful.com/d
 Feel free to open pull requests to fix bugs. If you want to add features, please have a look at the [original version](https://github.com/contentful-userland/gatsby-contentful-starter). It is always open to contributions and pull requests.
 
 You can learn more about how Contentful userland is organized by visiting [our about repository](https://github.com/contentful-userland/about).
+
+
+<!-- put regular font
+1 more phone box in customer and also add notes functions
+important notes when customer exist we need to check if exist then no need to create new 1 and if customer not exist then create new one 
+in the customer search filter not working 
+pending and done button same size and color yellow and black
+remove sorry and put parts not added 
+Reports remove load and reapir name 
+italic remove whole app
+, remove and add space in the report vehicles
+Trailer make and reefer unit  -->
+
+<!-- in the vehicle truck and trailer 
+user dropdown very long
+when create new order and message to driver 
+hey you got new order
+user page like customer 
+load info remove in reports E 
+remove payment method in report 
+number of stop pickup and delivery  in the report  -->
+
+
+<!-- item description change to notes and item price to price when i delivery pop up
+time box add in the delivery pop 
+upto 20 hours 
+in the reports also show detention 5 hours 
+in the driver section not to scroll to cahneg statius -->
