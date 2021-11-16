@@ -1,0 +1,150 @@
+.Header_Container{
+    width: 93%;
+    margin: auto;
+    margin-right: 0px;
+}
+.Header_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_image{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+.header_div{
+    width: 45% !important;
+}
+.Header_Title{
+    font-family: Rza;
+    font-style: normal;
+    font-weight: normal;
+    width: 90%;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -0.03em;
+    color: #FF4E03;
+    margin: 0px;
+}
+.Header_desc{
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    width: 80%;
+    color: #231E1E;
+    margin: 0px;
+    padding-top: 20px;
+
+}
+.get_started{
+    background: #003545;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px 10px;
+    margin-top: 20px;
+    outline: none;
+}
+.div_head{
+    width: 55%;
+}
+@media screen and (max-width: 960px) {
+    .Header_Title{
+        font-family: Rza;
+        font-style: normal;
+        font-weight: normal;
+        width: 90%;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: #FF4E03;
+        margin: 0px;
+    }
+    .Header_desc{
+        font-family: Neue Montreal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #231E1E;
+        margin: 0px;
+        padding-top: 0px;
+    
+    }
+}
+@media screen and (max-width: 750px) {
+    .Header_Container{
+        width: 95%;
+        margin: auto;
+        margin-right: 0px;
+    }
+    .Header_box{
+        display: block;
+    }
+    .div_head{
+        width: 100%;
+    }
+    .header_div{
+        width: 100% !important;
+    }
+    .header_image{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+    }
+    .Header_Title{
+        font-family: Rza;
+        font-style: normal;
+        font-weight: normal;
+        width: 100%;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: #FF4E03;
+        margin: 0px;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .Header_desc{
+        font-family: Neue Montreal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 25px;
+        width: 90%;
+        letter-spacing: 0.02em;
+        color: #231E1E;
+        margin: 0px;
+        padding-top: 20px;
+        margin: auto;
+        text-align: center;
+    }
+    .Btn_Cotainer{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .get_started{
+        background: #003545;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        padding: 10px 30px 10px;
+        margin-top: 20px;
+        outline: none;
+        text-align: center;
+        margin: auto;
+    }
+    
+}
