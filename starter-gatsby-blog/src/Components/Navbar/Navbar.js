@@ -2,10 +2,23 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import Logo from '../../static/Images/Logo.svg'
 import Hamberger from '../../static/Images/Hamberger.svg'
+import { useStaticQuery, graphql } from 'gatsby';
+
 function NavBar() {
     const [click, setClick] = useState(false);
-
     const handleClick = () => setClick(!click);
+    const data = useStaticQuery(graphql`
+    query globalNavbar {
+        allContentfulGlobalNavigation {
+          nodes {
+            title
+            slug
+          }
+        }
+      }
+  `);
+    const navItems = data.allContentfulGlobalNavigation.nodes
+    console.log(data)
     return (
         <>
             <nav className="navbar">
@@ -14,46 +27,16 @@ function NavBar() {
                         <img className="Logo_image" src={Logo} alt="no logo" />
                     </span>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li className="nav-item">
-                            <span
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                For Employees
-                            </span>
-                        </li>
-                        <li className="nav-item">
-                            <span
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                For Employees
-                            </span>
-                        </li>
-                        <li className="nav-item">
-                            <span
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                Resources
-                             </span>
-                        </li>
-                        <li className="nav-item">
-                            <span
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                About
-                             </span>
-                        </li>
-                        <li className="nav-item">
-                            <span
-                                className="nav-links"
-                                onClick={handleClick}
-                            >
-                                FAQ
-                             </span>
-                        </li>
+                        {navItems.map((el, i) => (
+                                <li className="nav-item">
+                                    <span
+                                        className="nav-links"
+                                        onClick={handleClick}
+                                    >
+                                        {el.title}
+                                    </span>
+                                </li>
+                        ))}
                     </ul>
                     <div className="mob_view">
                         <span
