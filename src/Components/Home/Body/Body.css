@@ -1,0 +1,116 @@
+.Body_Container{
+    width: 100%;
+    background: #50242D;
+    margin-top: 50px;
+}
+
+.Body_Box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.Body_Heading{
+    font-family: Rza;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 57px;
+    letter-spacing: -0.03em;
+    margin: 0;
+    color: #FFFFFF;
+}
+.Body_para{
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.Boxone{
+    width: 40%;
+}
+.boxtwo{
+    width: 40%;
+    margin-left: 40px;
+}
+.Body_btn{
+    padding: 10px 30px 10px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    outline: none;
+}
+@media screen and (max-width: 960px) {
+    .Boxone{
+        width: 50%;
+    }
+    .boxtwo{
+        width: 50%;
+        margin-left: 40px;
+    }
+    .Body_Box{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .Body_Heading{
+        font-family: Rza;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 99%;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+    }
+    .Body_para{
+        font-family: Neue Montreal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+}
+@media screen and (max-width: 750px) {
+    .Body_Box{
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    .Boxone{
+        width: 90%;
+    }
+    .boxtwo{
+        width: 90%;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .Body_Heading{
+        font-family: Rza;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 99%;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+    }
+    .Body_para{
+        font-family: Neue Montreal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+    
+    
+}
