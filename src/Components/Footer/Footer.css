@@ -1,0 +1,145 @@
+.Footer_Container{
+    background: #003545;
+    width: 100%;
+}
+.Footerbox{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.Footer_left_Item{
+    width: 80%;
+}
+.Footer_right_item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Footerlogo{
+    width: 20%;
+}
+.footerRoute{
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 0;
+    padding: 0px 20px 10px;
+}
+.Footer_copywrite{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 30px;
+}
+.logos{
+    display: flex;
+    align-items: center;
+}
+.copywrite{
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.logo_align{
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 60px;
+    cursor: pointer;
+}
+.Footer_boarder{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 30px;
+}
+.terms{
+    margin: 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 138%;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+    .Footer_left_Item{
+        width: 60%;
+    }
+    .Footer_right_item{
+        display: flex;
+        width: 45%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Footerbox{
+        width: 90%;
+        margin: auto;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .Footer_boarder{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        padding-top: 30px;
+        flex-wrap: wrap;
+    }
+    .Footer_left_Item{
+        width: 100%;
+    }
+    .Footerlogo{
+        width: 50%;
+    }
+    .Footer_right_item{
+        display: block;
+        width: 100%;
+        padding-top: 30px;
+    }
+    .Footer_copywrite{
+        width: 90%;
+        margin: auto;
+        display: block;
+        padding-top: 20px;
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 30px;
+    }
+    .copywrite{
+        font-family: Neue Montreal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+}

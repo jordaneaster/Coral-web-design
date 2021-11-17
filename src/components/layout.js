@@ -3,7 +3,7 @@ import './variables.css'
 import './global.css'
 import Seo from './seo'
 import Navbar from './../Components/Navbar/Navbar'
-import Footer from './footer'
+import Footer from '../Components/Footer/Footer'
 
 
 const Layout = ({ children }) => {
