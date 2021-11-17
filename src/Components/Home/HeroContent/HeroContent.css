@@ -1,0 +1,99 @@
+.Hero_Container{
+    width: 100%;
+}
+.Hero_box{
+    width: 88%;
+    margin: auto;
+    margin-top: 50px;
+}
+.Hero_Heading{
+    font-family: Rza;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FF4E03;
+}
+.Hero_display{
+    display: flex;
+    justify-content: space-between;
+}
+.box_outline{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+    margin-right: 20px; 
+    margin-left: 20px;
+    border-top: 1px solid #42404077;
+    padding-top: 30px;
+}
+.HeroImage{
+    width: 100px;
+}
+
+.Hero_desc{
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #231E1E;
+    padding-left: 20px;
+}
+@media screen and (max-width: 960px) {
+    .box_outline{
+        display: block;
+        width: 30%;
+        margin: auto;
+        align-items: center;
+        margin-right: 20px; 
+        margin-left: 20px;
+        border-top: 1px solid #42404077;
+        padding-top: 30px;
+    }
+    .HeroImage{
+        width: 100px;
+        margin: auto;
+    }
+    .Hero_desc{
+        padding-left: 0px;
+        text-align: start;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .Hero_display{
+        display: block;
+        margin: auto;
+    }
+    .Hero_Heading{
+        font-size: 40px;
+        line-height: 99%;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #FF4E03;
+    }
+    .box_outline{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        margin-right: 20px; 
+        margin-left: 20px;
+        border-top: 1px solid #42404077;
+        padding-top: 20px;
+    }
+    .Hero_desc{
+        padding-left: 20px;
+        text-align: start;
+    }
+    .HeroImage{
+        width: 70px;
+    }
+}
