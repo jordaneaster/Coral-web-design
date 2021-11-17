@@ -1,9 +1,11 @@
 .Banner_Container{
     width: 100%;
     background: #FF4E03;
-    height: 400px;
+    height: auto;
     display: flex;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .Banner_Box{
     width: 100%;

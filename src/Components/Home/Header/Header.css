@@ -112,7 +112,6 @@
         color: #FF4E03;
         margin: 0px;
         margin: auto;
-        text-align: center;
         margin-top: 10px;
     }
     .Header_desc{
@@ -125,14 +124,10 @@
         letter-spacing: 0.02em;
         color: #231E1E;
         margin: 0px;
-        padding-top: 20px;
-        margin: auto;
-        text-align: center;
+        padding-top: 0px;
     }
     .Btn_Cotainer{
         width: 50%;
-        margin: auto;
-        text-align: center;
         margin-bottom: 20px;
     }
     .get_started{
