@@ -1,0 +1,79 @@
+.Banner_Container{
+    width: 100%;
+    background: #FF4E03;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.Banner_Box{
+    width: 100%;
+    text-align: center;
+}
+
+.Banner_Heading{
+    margin: 0px;
+    font-family: Rza;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+.Banner_para{
+    width: 40%;
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #231E1E;
+    margin: auto;
+    margin-top: 20px;
+}
+.Banner_btn{
+    padding: 14px 30px 15px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    color: #003545;
+    outline: none;
+    margin-top: 20px;
+
+}
+@media screen and (max-width: 960px) {
+    .Banner_Heading{
+        margin: 0px;
+        font-family: Rza;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 99%;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+    }
+    .Banner_para{
+        width: 50%;
+        font-family: Neue Montreal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #231E1E;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .Banner_para{
+        width: 90%;
+    }
+    .Banner_Container{
+        height: 350px;
+    }
+}
