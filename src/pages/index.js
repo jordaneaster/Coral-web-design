@@ -23,67 +23,18 @@ query IndexPage {
       ... on ContentfulIntroHeaderComponent {
         id
         title
-        subTitle {
-          childMarkdownRemark {
-            html
-          }
-        }
-        image {
-          fluid {
-            src
-          }
-        }
-        cta {
-          title
-          url
-        }
       }
       ... on ContentfulSpotlight {
         id
         headline
-        cta {
-          title
-          url
-        }
-        description {
-          childMarkdownRemark {
-            html
-          }
-        }
-        image {
-          fluid {
-            src
-          }
-        }
       }
       ... on ContentfulSpotlightNoImage {
         id
         headline
-        cta {
-          title
-          url
-        }
-        description {
-          childMarkdownRemark {
-            html
-          }
-        }
       }
       ... on ContentfulThreeColumnComponent {
         id
         title
-        content {
-          bodyCopy {
-            childMarkdownRemark {
-              html
-            }
-          }
-          image {
-            file {
-              url
-            }
-          }
-        }
       }
     }
   }

@@ -1,6 +1,4 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-
 import Header from '../Home/Header/Header'
 import HeroContent from '../Home/HeroContent/HeroContent'
 import Body from '../Home/Body/Body'

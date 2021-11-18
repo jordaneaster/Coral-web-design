@@ -1,17 +1,43 @@
 import React from 'react'
 import './Banner.css'
-const Banner = ({ block }) => {
+import { useStaticQuery, graphql } from 'gatsby';
+const Banner = () => {
+  const data = useStaticQuery(graphql`
+    query SpotlightNoImage {
+      allContentfulIndex(filter: {slug: {eq: "/"}}) {
+        nodes {
+          content {
+            ... on ContentfulSpotlightNoImage {
+              id
+              cta {
+                url
+                title
+              }
+              headline
+              description {
+                childMarkdownRemark {
+                  html
+                }
+              }
+            }
+          }
+        }
+      }
+      }
+  `);
+  const spotlightnoimage = data.allContentfulIndex.nodes[0].content
+  const filter = spotlightnoimage.filter(el => el.headline != undefined ? true : false)
   return (
     <>
-    {
-      <div className="Banner_Container">
-        <div className="Banner_Box">
-          <h1 className="Banner_Heading">{block.headline}</h1>
-          <p className="Banner_para" dangerouslySetInnerHTML={{ __html: block.description.childMarkdownRemark.html }}></p>
-          <button className="Banner_btn">{block.cta.title}</button>
+      {filter.map((el, i) => (
+        <div className="Banner_Container" key={i}>
+          <div className="Banner_Box">
+            <h1 className="Banner_Heading">{el.headline}</h1>
+            <p className="Banner_para" dangerouslySetInnerHTML={{ __html: el.description.childMarkdownRemark.html }}></p>
+            <button className="Banner_btn">{el.cta.title}</button>
+          </div>
         </div>
-      </div>
-    }
+      ))}
     </>
   )
 }

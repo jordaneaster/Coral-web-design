@@ -1,14 +1,42 @@
 import React from 'react'
 import './HeroContent.css'
-
-const HeroContent = ({block}) => {
+import { useStaticQuery, graphql } from 'gatsby';
+const HeroContent = () => {
+  const data = useStaticQuery(graphql`
+    query Threecolumn {
+      allContentfulIndex(filter: {slug: {eq: "/"}}) {
+        nodes {
+          content {
+            ... on ContentfulThreeColumnComponent {
+              id
+              title
+              content {
+                image {
+                  file {
+                    url
+                  }
+                }
+                bodyCopy {
+                  childMarkdownRemark {
+                    html
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      }
+  `);
+  const threecolumn = data.allContentfulIndex.nodes[0].content
+  const filter = threecolumn.filter(el => el.title != undefined ? true : false)
   return (
     <div className="Hero_Container">
-      {
-        <div className="Hero_box">
-          <h1 className="Hero_Heading">{block.title}</h1>
+      {filter.map((els, i) => (
+        <div className="Hero_box" key={i}>
+          <h1 className="Hero_Heading">{els.title}</h1>
           <div className="Hero_display">
-            {block.content.map((el, index) => (
+            {els.content.map((el, index) => (
               <div className="box_outline" key={index}>
                 <div>
                   <img className="HeroImage" src={el.image.file.url} alt="no image" />
@@ -20,7 +48,7 @@ const HeroContent = ({block}) => {
             ))}
           </div>
         </div>
-      }
+      ))}
     </div>
   )
 }
