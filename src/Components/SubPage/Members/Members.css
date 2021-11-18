@@ -1,0 +1,71 @@
+.Member_Container{
+    width: 100%;
+}
+.Members_head{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+
+}
+.Member_ourTeam{
+    font-family: Rza;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FF4E03;
+    margin-bottom: 0px;
+}
+.Member_para{
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #231E1E;
+    margin: 0px;
+}
+.team_box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.card{
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+}
+.card_image{
+    height: 300px;
+}
+.Card_Name{
+    font-family: Rza;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #231E1E;
+    margin: 0px;
+    margin-top: 10px;
+}
+.Card_title{
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #231E1E;
+    margin: 0px;
+    margin-top: 10px;
+
+}

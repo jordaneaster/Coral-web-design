@@ -1,0 +1,38 @@
+.Spotlight_Container{
+    width: 100%;
+}
+.Spotlight_box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+}
+.Spotlight_left{
+    width: 50%;
+}
+.Spotlight_right{
+    width: 50%;
+}
+.spotlight_heading{
+    font-family: Rza;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 57px;
+    letter-spacing: -0.03em;
+    color: #FF4E03;
+    margin: 0px;
+    
+}
+.spotlight_Desc{
+    width: 90%;
+    margin: 0;
+    margin: auto;
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #231E1E;
+}

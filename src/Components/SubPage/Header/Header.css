@@ -1,0 +1,42 @@
+.Headers_Container{
+    width: 100%;
+    overflow: hidden;
+}
+.Headers_Box{
+    width: 93%;
+    margin: auto;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+}
+.HeadersRight{
+    width: 100%;
+    position: relative;
+    right: -30px;
+}
+.HeadersRight > img{
+    width: 125%;
+}
+.HeadersLef{
+    width: 70%;
+}
+.header_left_heading{
+    font-family: Rza;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #FF4E03;
+    margin: 0;
+}
+.header_right_para{
+    font-family: Neue Montreal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #231E1E;
+
+}
