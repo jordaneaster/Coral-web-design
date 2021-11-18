@@ -22,7 +22,6 @@
     letter-spacing: -0.03em;
     color: #FF4E03;
     margin: 0px;
-    
 }
 .spotlight_Desc{
     width: 90%;
@@ -35,4 +34,61 @@
     line-height: 22px;
     letter-spacing: 0.03em;
     color: #231E1E;
+    margin: 0;
+}
+.spotlightbtn{
+    padding: 14px 30px 15px;
+    background: #003545;
+    border-radius: 30px;
+    outline: none;
+    color: white;
+}
+@media screen and (max-width: 960px) {
+    .spotlight_heading{
+        font-family: Rza;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: #FF4E03;
+        margin: 0px;
+    }
+   
+}
+@media screen and (max-width: 750px) {
+    .spotlight_heading{
+        font-family: Rza;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 99%;
+        letter-spacing: -0.03em;
+        color: #FF4E03;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    .Spotlight_box{
+        width: 90%;
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+    }
+    .Spotlight_left{
+        width: 90%;
+        margin: auto;
+    }
+    .Spotlight_right{
+        width: 100%;
+    }
+    .spotlight_Desc{
+        margin: auto;
+    }
+    .spotlightbtn{
+        width: 100%;
+        background: #003545;
+        border-radius: 30px;
+        outline: none;
+        color: white;
+    }
 }

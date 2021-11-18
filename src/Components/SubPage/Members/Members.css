@@ -5,7 +5,6 @@
     text-align: center;
     width: 40%;
     margin: auto;
-
 }
 .Member_ourTeam{
     font-family: Rza;
@@ -68,4 +67,42 @@
     margin: 0px;
     margin-top: 10px;
 
+}
+@media screen and (max-width: 960px) { 
+    .Members_head{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+    .Member_ourTeam{
+        font-family: Rza;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 99%;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #FF4E03;
+        margin-bottom: 0px;
+    }
+    .card{
+        width: 40%;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .Members_head{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .card{
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .card_image{
+        height: 250px;
+    }
 }

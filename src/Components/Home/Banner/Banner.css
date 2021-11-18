@@ -47,7 +47,7 @@
     margin-top: 20px;
 
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) { 
     .Banner_Heading{
         margin: 0px;
         font-family: Rza;

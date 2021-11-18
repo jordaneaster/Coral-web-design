@@ -12,6 +12,7 @@ const Spotlight = ({ filterBody }) => {
                         <p className="spotlight_Desc" dangerouslySetInnerHTML={{
                             __html: el.description.childMarkdownRemark.html,
                         }}></p>
+                        <button className="spotlightbtn">{el.cta.title}</button>
                     </div>
                 </div>
             ))}
