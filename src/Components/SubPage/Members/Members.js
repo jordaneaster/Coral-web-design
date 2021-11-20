@@ -3,12 +3,12 @@ import './Members.css'
 const Members = ({ block }) => {
     return (
         <div className="Member_Container">
-                <div className="Members_head">
-                    <h1 className="Member_ourTeam">{block.title}</h1>
-                    <p className="Member_para" dangerouslySetInnerHTML={{
-                        __html: block.description.childMarkdownRemark.html,
-                    }}></p>
-                </div>
+            <div className="Members_head">
+                <h1 className="Member_ourTeam">{block.title}</h1>
+                <p className="Member_para" dangerouslySetInnerHTML={{
+                    __html: block.description.childMarkdownRemark.html,
+                }}></p>
+            </div>
             <div className="team_box">
                 {block.teamMembers.map((el, i) => (
                     <div className="card" key={i}>
