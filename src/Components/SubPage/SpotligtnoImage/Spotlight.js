@@ -1,21 +1,19 @@
 import React from 'react'
 import './Spotlight.css'
-const Spotlight = ({ filterBody }) => {
+const Spotlight = ({ block }) => {
     return (
         <div className="Spotlight_Container">
-            {filterBody.map((el, i) => (
-                <div className="Spotlight_box" key={i}>
+                <div className="Spotlight_box">
                     <div className="Spotlight_left">
-                        <h1 className="spotlight_heading">{el.headline}</h1>
+                        <h1 className="spotlight_heading">{block.headline}</h1>
                     </div>
                     <div className="Spotlight_right">
                         <p className="spotlight_Desc" dangerouslySetInnerHTML={{
-                            __html: el.description.childMarkdownRemark.html,
+                            __html: block.description.childMarkdownRemark.html,
                         }}></p>
-                        <button className="spotlightbtn">{el.cta.title}</button>
+                        <button className="spotlightbtn">{block.cta.title}</button>
                     </div>
                 </div>
-            ))}
         </div>
     )
 }
