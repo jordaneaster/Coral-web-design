@@ -6,9 +6,7 @@ const Header = ({ block }) => {
                 <div className="Headers_Box">
                     <div className="HeadersLef">
                         <h1 className="header_left_heading">{block.title}</h1>
-                        <p className="header_right_para" dangerouslySetInnerHTML={{
-                            __html: block.subTitle.childMarkdownRemark.html,
-                        }}></p>
+                        <p className="header_right_para">{block.subTitle.subTitle}</p>
                     </div>
                     <div className="HeadersRight">
                         <img src={block.images[0].file.url} alt="no image" />

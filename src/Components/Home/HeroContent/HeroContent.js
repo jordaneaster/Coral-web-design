@@ -17,9 +17,7 @@ const HeroContent = () => {
                   }
                 }
                 bodyCopy {
-                  childMarkdownRemark {
-                    html
-                  }
+                  bodyCopy
                 }
               }
             }
@@ -42,7 +40,7 @@ const HeroContent = () => {
                   <img className="HeroImage" src={el.image.file.url} alt="no image" />
                 </div>
                 <div>
-                  <p className="Hero_desc" dangerouslySetInnerHTML={{ __html: el.bodyCopy.childMarkdownRemark.html }}></p>
+                  <p className="Hero_desc">{el.bodyCopy.bodyCopy}</p>
                 </div>
               </div>
             ))}

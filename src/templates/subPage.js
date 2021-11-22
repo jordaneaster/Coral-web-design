@@ -25,17 +25,13 @@ query Subpages($slug: String!) {
           }
         }
         subTitle {
-          childMarkdownRemark {
-            html
-          }
+          subTitle
         }
       }
       ... on ContentfulSpotlightNoImage {
         id
         description {
-          childMarkdownRemark {
-            html
-          }
+          description
         }
         cta {
           title
@@ -47,9 +43,7 @@ query Subpages($slug: String!) {
         id
         title
         description {
-          childMarkdownRemark {
-            html
-          }
+          description
         }
         teamMembers {
           fullName
@@ -67,9 +61,7 @@ query Subpages($slug: String!) {
         questions {
           question
           answer {
-            childMarkdownRemark {
-              html
-            }
+            answer
           }
         }
         title
