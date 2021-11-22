@@ -15,9 +15,7 @@ const Banner = () => {
               }
               headline
               description {
-                childMarkdownRemark {
-                  html
-                }
+                description
               }
             }
           }
@@ -33,7 +31,7 @@ const Banner = () => {
         <div className="Banner_Container" key={i}>
           <div className="Banner_Box">
             <h1 className="Banner_Heading">{el.headline}</h1>
-            <p className="Banner_para" dangerouslySetInnerHTML={{ __html: el.description.childMarkdownRemark.html }}></p>
+            <p className="Banner_para" >{el.description.description}</p>
             <button className="Banner_btn">{el.cta.title}</button>
           </div>
         </div>

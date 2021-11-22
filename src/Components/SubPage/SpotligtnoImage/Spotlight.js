@@ -8,9 +8,7 @@ const Spotlight = ({ block }) => {
                         <h1 className="spotlight_heading">{block.headline}</h1>
                     </div>
                     <div className="Spotlight_right">
-                        <p className="spotlight_Desc" dangerouslySetInnerHTML={{
-                            __html: block.description.childMarkdownRemark.html,
-                        }}></p>
+                        <p className="spotlight_Desc">{block.description.description}</p>
                         <button className="spotlightbtn">{block.cta.title}</button>
                     </div>
                 </div>

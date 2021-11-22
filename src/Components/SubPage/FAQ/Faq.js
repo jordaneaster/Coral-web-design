@@ -10,9 +10,7 @@ const Faq = ({ block }) => {
                 <Collapse  expandIconPosition="right">
                     {block.questions.map((el, i) => (
                         <Panel header={el.question} key={i}>
-                            <div className="faqtext" dangerouslySetInnerHTML={{
-                                __html: el.answer.childMarkdownRemark.html,
-                            }}></div>
+                            <div className="faqtext">{el.answer.answer}</div>
                         </Panel>
                     ))}
                 </Collapse>

@@ -13,9 +13,7 @@ const Header = () => {
           ... on ContentfulIntroHeaderComponent {
             title
             subTitle {
-              childMarkdownRemark {
-                html
-              }
+              subTitle
             }
             image {
               fluid {
@@ -41,7 +39,9 @@ const Header = () => {
         <div key={i} className="Header_box">
           <div className="div_head">
             <h4 className="Header_Title">{el.title}</h4>
-            <p className="Header_desc" dangerouslySetInnerHTML={{ __html: el.subTitle.childMarkdownRemark.html }}></p>
+            <p className="Header_desc" >{el.subTitle.subTitle}</p>
+            
+            
             <a href={el.cta.url} target="_blank" >
               <div className="Btn_Cotainer">
                 <button className="get_started">{el.cta.title}</button>

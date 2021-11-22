@@ -14,9 +14,7 @@ const Body = () => {
                 title
               }
               description {
-                childMarkdownRemark {
-                  html
-                }
+                description
               }
               headline
               image {
@@ -41,7 +39,7 @@ const Body = () => {
           </div>
           <div className="boxtwo">
             <h1 className="Body_Heading">{el.headline}</h1>
-            <p className="Body_para" dangerouslySetInnerHTML={{ __html: el.description.childMarkdownRemark.html }}></p>
+            <p className="Body_para">{el.description.description}</p>
             <button className="Body_btn">{el.cta.title}</button>
           </div>
         </div>
