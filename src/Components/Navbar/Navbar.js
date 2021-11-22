@@ -23,9 +23,11 @@ function NavBar() {
         <>
             <nav className="navbar">
                 <div className="nav-container">
+                <Link to="/">
                     <span className="nav-logo">
                         <img className="Logo_image" src={Logo} alt="no logo" />
                     </span>
+                </Link>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         {navItems.map((el, i) => (
                             <Link to={`/${el.slug}`} key={i}>

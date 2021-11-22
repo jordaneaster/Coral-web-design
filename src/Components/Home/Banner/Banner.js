@@ -26,7 +26,7 @@ const Banner = () => {
       }
   `);
   const spotlightnoimage = data.allContentfulIndex.nodes[0].content
-  const filter = spotlightnoimage.filter(el => el.headline != undefined ? true : false)
+  const filter = spotlightnoimage.filter(el => el.headline !== undefined ? true : false)
   return (
     <>
       {filter.map((el, i) => (

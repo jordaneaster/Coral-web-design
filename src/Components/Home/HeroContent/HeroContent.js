@@ -29,7 +29,7 @@ const HeroContent = () => {
       }
   `);
   const threecolumn = data.allContentfulIndex.nodes[0].content
-  const filter = threecolumn.filter(el => el.title != undefined ? true : false)
+  const filter = threecolumn.filter(el => el.title !== undefined ? true : false)
   return (
     <div className="Hero_Container">
       {filter.map((els, i) => (
