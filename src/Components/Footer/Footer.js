@@ -6,19 +6,22 @@ import LinkedinLogo from '../../static/Images/linkedin.svg'
 import TwitterLogo from '../../static/Images/twitter.svg'
 import YoutubeLogo from '../../static/Images/youtube.svg'
 import Insta from '../../static/Images/Insta.svg'
+import {Link} from 'gatsby'
 const Footer = () => {
     return (
         <div className="Footer_Container">
             <div className="Footerbox">
                 <div className="Footer_left_Item">
+                    <Link to="/">
                     <img className="Footerlogo" src={FooterLogo} alt="footer logo" />
+                    </Link>
                 </div>
                 <div className="Footer_right_item">
-                    <p className="footerRoute">For Employee</p>
-                    <p className="footerRoute">Resources</p>
-                    <p className="footerRoute">FAQ</p>
-                    <p className="footerRoute">For Employers</p>
-                    <p className="footerRoute">About</p>
+                    <Link to="/employees"><p className="footerRoute">For Employee</p></Link>
+                    <Link to="/employers"><p className="footerRoute">For Employers</p></Link>
+                    <Link to="/resources"><p className="footerRoute">Resources</p></Link>
+                    <Link to="/about"><p className="footerRoute">About</p></Link>
+                    <Link to="/faq"><p className="footerRoute">FAQ</p></Link>
                 </div>
 
             </div>
