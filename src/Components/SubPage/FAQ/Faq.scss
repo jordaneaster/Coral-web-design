@@ -1,3 +1,4 @@
+@import '../../../static/typography.css';
 .faq_title{
     font-family: Rza;
     font-style: normal;
@@ -8,11 +9,13 @@
     letter-spacing: -0.03em;
     color: #FF4E03;
 }
+.faq{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 .faq_item{
     width: 70%;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 .ant-collapse > .ant-collapse-item > .ant-collapse-header{
     font-family: Rza !important;

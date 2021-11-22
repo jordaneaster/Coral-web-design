@@ -1,5 +1,5 @@
 import React from 'react'
-import './Spotlight.css'
+import './Spotlight.scss'
 const Spotlight = ({ block }) => {
     return (
         <div className="Spotlight_Container">

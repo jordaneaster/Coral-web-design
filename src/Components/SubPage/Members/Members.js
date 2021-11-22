@@ -1,5 +1,5 @@
 import React from 'react'
-import './Members.css'
+import './Members.scss'
 const Members = ({ block }) => {
     return (
         <div className="Member_Container">

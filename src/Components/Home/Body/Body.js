@@ -1,5 +1,5 @@
 import React from 'react'
-import './Body.css'
+import './Body.scss'
 import { useStaticQuery, graphql } from 'gatsby';
 const Body = () => {
   const data = useStaticQuery(graphql`

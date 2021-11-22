@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("../static//fonts/Neuemontreal/400/PPNeueMontreal-Regular.woff");
+  }
+  @font-face {
+    font-family: Rza;
+    src: url('../static//fonts/RZA/400/RzaRegular-Web.woff');
+}

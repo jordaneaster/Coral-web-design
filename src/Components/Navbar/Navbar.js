@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./Navbar.scss";
 import Logo from '../../static/Images/Logo.svg'
 import Hamberger from '../../static/Images/Hamberger.svg'
 import { useStaticQuery, graphql, Link } from 'gatsby';
@@ -11,6 +11,7 @@ function NavBar() {
     query globalNavbar {
         allContentfulGlobalNavigation {
           nodes {
+            __typename
             title
             slug
           }

@@ -1,10 +1,10 @@
 import React from 'react'
-import './Faq.css'
+import './Faq.scss'
 import { Collapse } from 'antd';
 const Faq = ({ block }) => {
     const { Panel } = Collapse;
     return (
-        <>
+        <div className="faq">
             <h1 className="faq_title">{block.title}</h1>
             <div className="faq_item">
                 <Collapse  expandIconPosition="right">
@@ -17,7 +17,7 @@ const Faq = ({ block }) => {
                     ))}
                 </Collapse>
             </div>
-        </>
+            </div>
     )
 }
 export default Faq

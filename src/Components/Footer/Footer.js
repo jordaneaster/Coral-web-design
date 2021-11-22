@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+import './Footer.scss'
 import FooterLogo from '../../static/Images/LogoFooter.svg'
 import FacebookLogo from '../../static/Images/facebook.svg'
 import LinkedinLogo from '../../static/Images/linkedin.svg'

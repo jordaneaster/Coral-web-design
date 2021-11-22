@@ -1,5 +1,5 @@
 import React from 'react'
-import './HeroContent.css'
+import './HeroContent.scss'
 import { useStaticQuery, graphql } from 'gatsby';
 const HeroContent = () => {
   const data = useStaticQuery(graphql`
