@@ -29,7 +29,7 @@ const Body = () => {
       }
   `);
   const spotlight = data.allContentfulIndex.nodes[0]
-  const filter = spotlight.content.filter(el => el.headline != undefined ? true : false)
+  const filter = spotlight.content.filter(el => el.headline !== undefined ? true : false)
   return (
     <div className="Body_Container">
       {filter.map((el, i) => (

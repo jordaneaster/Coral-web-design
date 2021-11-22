@@ -32,7 +32,7 @@ const Header = () => {
       }
   `);
   const getHomeData = data.allContentfulIndex.edges[0].node.content
-  const filter = getHomeData.filter(el => el.title != undefined ? true : false)
+  const filter = getHomeData.filter(el => el.title !== undefined ? true : false)
   return (
     <div className="Header_Container">
       {filter.map((el, i) => (
