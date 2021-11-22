@@ -18,7 +18,6 @@ function NavBar() {
       }
   `);
     const navItems = data.allContentfulGlobalNavigation.nodes
-    console.log(navItems)
     return (
         <>
             <nav className="navbar">

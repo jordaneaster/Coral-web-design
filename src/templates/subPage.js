@@ -16,6 +16,20 @@ query Subpages($slug: String!) {
     title
     content {
       __typename
+      ... on ContentfulIntroHeaderMulti {
+        id
+        title
+        images {
+          file {
+            url
+          }
+        }
+        subTitle {
+          childMarkdownRemark {
+            html
+          }
+        }
+      }
       ... on ContentfulSpotlightNoImage {
         id
         description {
@@ -48,19 +62,17 @@ query Subpages($slug: String!) {
           }
         }
       }
-      ... on ContentfulIntroHeaderMulti {
+      ... on ContentfulFaq {
         id
+        questions {
+          question
+          answer {
+            childMarkdownRemark {
+              html
+            }
+          }
+        }
         title
-        images {
-          file {
-            url
-          }
-        }
-        subTitle {
-          childMarkdownRemark {
-            html
-          }
-        }
       }
     }
   }
